@@ -1,0 +1,28 @@
+/*Credit to W3School link : https://www.w3schools.com/howto/howto_css_arrows.asp*/
+
+i {
+    border: solid black !important;
+    border-width: 0 3px 3px 0 !important;
+    display: inline-block !important;
+    padding: 3px !important;
+}
+
+.right {
+    transform: rotate(-45deg) !important;
+    -webkit-transform: rotate(-45deg) !important;
+}
+
+.left {
+    transform: rotate(135deg) !important;
+    -webkit-transform: rotate(135deg) !important;
+}
+
+.up {
+    transform: rotate(-135deg) !important;
+    -webkit-transform: rotate(-135deg) !important;
+}
+
+.down {
+    transform: rotate(45deg) !important;
+    -webkit-transform: rotate(45deg) !important;
+}

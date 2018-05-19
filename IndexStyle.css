@@ -1,49 +1,147 @@
-.sub-c{
-	background-color: red;
+/*Erithiana Sisijoan Koesnadi*/
+/*Note: I kept some background in comment incase I need to know the divs path*/;
+
+.Blog_item:hover>i.arrow.right{
+	transform: rotateY(-45deg) !important;
+	-webkit-transform: rotateY(-45deg) !important;
+	-moz-transform:rotateY(-45deg) !important;
+	transition: 0.3s !important;
 }
 
-.sub-b{
-	background-color: green;
+.Blog_item:hover>a, .Blog_item:hover br{
+	display: block;
+
 }
 
-.sub-a{
-	background-color: yellow;
+.Blog_item a, .Blog_item br{
+	display: none;
+	text-decoration: none;
+	color: white;
+
 }
 
-.a{
-	background-color: white;
+.Blog_item{
+	background-color: grey;
+	font-size: 14px;
+	font-family: monospace;
+	margin: 5px;
+	cursor: default;
+	user-select: none;
+}
+
+.Blog-Entries{
+	/*background-color: red;*/
+}
+
+.Blog-FlavorText #Jakarta_GoogleMap{
+	text-decoration: none;
+	color: #33adff;
+}
+
+.Blog-FlavorText #hacktiv8_site{
+	text-decoration: none;
+	color: #ed8200;
+}
+
+.Blog-FlavorText p{
+	/*background-color: white;*/
+	font-style: "Verdana";
+	font-size: 12px;
+
+}
+
+.Blog-FlavorText{
+	/*background-color: green;*/
+	text-align: center;
+	margin: auto auto;
+}
+
+.Blog-Icon .image img{
+	/*background-color: teal;*/
+	width: 50%;
+	display: block;
+	margin: 17% auto;
+
+}
+
+.Blog-Icon{
+	/*background-color: yellow;*/
+	opacity: 25%;
+}
+
+.left_nav{
+	/*background-color: white;*/
 	grid-column: : 1 2; 
 	grid-row: 1 2;
 	display: grid;
 	grid-template-rows: 4fr 4fr 10fr;
 }
 
-.b{
-	background-color: pink;
+.blog_feed{
+	background-color:  #e6e6e6;
 	grid-column: 3 5;
 	grid-row: 1 2;
+	overflow: scroll;
+	scroll-behavior: smooth;
 }
 
 .main{
 	height: 100%;
 }
 
+.blog_section iframe{
+	padding : 20px 20%;
+}
+
+.blog_section .centeredimage img{
+	width: 25%;
+	display: block;
+	margin: auto auto;
+}
+
+.blog_section p{
+	text-indent: 2em;
+	font-size: 12px;
+	margin-top: 10px;
+
+}
+
+.blog_section h5{
+	font-size: 16px;
+}
+
 .blog_section{
-	margin-top: 30px;
-	margin-bottom: 30px;
-	background-color: seagreen;
+	margin: 10px;
+	border: 1px solid #cccccc;
+	font-family: monospace;
+	letter-spacing: 1px;
+	line-height: 1.5;
+	padding: 5px;
+	background-color: #f2f2f2;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .grid{
 	display: grid;
 	grid-template-columns: 1fr 3fr;
 	grid-template-rows: 100%;
-	background-color: blue;
-	padding: 3px;
+	/*background-color: blue;*/
+	padding: 0px;
+}
+
+footer a{
+}
+
+footer{
+	position: absolute;
+	width: 32px;
+	bottom: 0;
+	right:10px;
+	/*background-color: pink*/;
 }
 
 body{
-	background-color: darkseagreen;
+	/*background-color: darkseagreen;*/
 	height: 100%;
 }
 
