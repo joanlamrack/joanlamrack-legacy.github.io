@@ -1,5 +1,5 @@
 /*Erithiana Sisijoan Koesnadi*/
-/*Note: I kept some background in comment incase I need to know the divs path*/;
+/*Note: I kept some background in comment incase I need to know the divs path*/
 
 .Blog_item:hover>i.arrow.right{
 	transform: rotateY(-45deg) !important;
@@ -81,7 +81,7 @@
 	background-color:  #e6e6e6;
 	grid-column: 3 5;
 	grid-row: 1 2;
-	overflow: scroll;
+	overflow-y: scroll;
 	scroll-behavior: smooth;
 }
 
@@ -89,9 +89,23 @@
 	height: 100%;
 }
 
-.blog_section iframe{
-	padding : 20px 20%;
+.blog_section video{
+	/*background-color: pink;*/
+	width: 60%;
+	margin-right: 20%;
+	margin-left: 20%;
+	margin-top: 10px;
 }
+
+
+.blog_section .youtube_embed{
+	/*background-color: teal;*/
+	height: 75%;
+	width: 100%;
+	display: block;
+
+}
+
 
 .blog_section .centeredimage img{
 	width: 25%;
@@ -129,7 +143,9 @@
 	padding: 0px;
 }
 
-footer a{
+
+
+footer img{
 }
 
 footer{
