@@ -40,6 +40,11 @@
 
 }
 
+#GameTitle>a{
+	text-decoration: none;
+	color: cadetblue;
+}
+
 #GameTitle{
 	text-align: center;
 	font-family: 'Courier New', Courier, monospace;

@@ -17,6 +17,8 @@ for (let i = 0; i < 3; i++) {
 				document.getElementById(value).innerText = turn;
 				document.getElementById("status").innerText = newGame.getGameStatus();
 			}
+			if(newGame.stopGame)document.getElementById("GameTitle").innerHTML = "<a href=\"tictactoe.html\">Restart Here</a>"
+
 		});
 		board.appendChild(divEl);
 	}

@@ -24,11 +24,11 @@ class TicTacToeGameSession{
 			if (this.board[x][y] === this.defaultvalue) {
 				this.board[x][y] = this.currentTurn;
 				if (this.whoIsWinningTicTacToe(this.board, this.currentTurn)) {
-					this.gameStatus = this.currentTurn + " wins";
+					this.gameStatus = this.currentTurn + " Wins";
 					this.stopGame = true;
 				}
 				if (this.isBoardFull(this.board, this.defaultvalue)) {
-					this.gameStatus = "No one wins";
+					this.gameStatus = "Draw";
 					this.stopGame = true;
 				}
 				
