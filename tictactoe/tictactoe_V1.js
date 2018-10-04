@@ -1,11 +1,11 @@
-class TicTacToeGameSession{
-	constructor(firstPlayer, secondPlayer, boardSize, defaultvalue = []){
+class TicTacToeGameSession {
+	constructor(firstPlayer, secondPlayer, boardSize, defaultvalue = []) {
 		this.currentTurn = firstPlayer;
 		this.firstPlayer = firstPlayer;
 		this.secondPlayer = secondPlayer;
 		this.defaultvalue = defaultvalue;
 		this.stopGame = false;
-		this.gameStatus = "Current Turn: "+firstPlayer;
+		this.gameStatus = "Current Turn: " + firstPlayer;
 		this.board = this.generateBoard(boardSize, defaultvalue);
 	}
 
@@ -18,9 +18,8 @@ class TicTacToeGameSession{
 		return output;
 	}
 
-
 	TakeTurn(x, y) {
-		if(!this.stopGame){
+		if (!this.stopGame) {
 			if (this.board[x][y] === this.defaultvalue) {
 				this.board[x][y] = this.currentTurn;
 				if (this.whoIsWinningTicTacToe(this.board, this.currentTurn)) {
@@ -31,8 +30,8 @@ class TicTacToeGameSession{
 					this.gameStatus = "Draw";
 					this.stopGame = true;
 				}
-				
-				if(!this.stopGame)this.NextTurn();
+
+				if (!this.stopGame) this.NextTurn();
 				return true;
 			} else {
 				return false;
@@ -41,10 +40,11 @@ class TicTacToeGameSession{
 	}
 
 	NextTurn() {
-		this.currentTurn = this.currentTurn === this.firstPlayer
-			? this.secondPlayer
-			: this.firstPlayer;
-		this.gameStatus = "Current Turn: "+this.currentTurn;
+		this.currentTurn =
+			this.currentTurn === this.firstPlayer
+				? this.secondPlayer
+				: this.firstPlayer;
+		this.gameStatus = "Current Turn: " + this.currentTurn;
 	}
 
 	isBoardFull(paramArray, defaultvalue) {
@@ -58,14 +58,14 @@ class TicTacToeGameSession{
 		return true;
 	}
 
-	getGameStatus(){
+	getGameStatus() {
 		return this.gameStatus;
 	}
 
 	whoIsWinningTicTacToe(paramArray, player) {
 		let score = 0;
 		let score2 = 0;
-	
+
 		for (let i = 0; i < paramArray.length; i++) {
 			for (let j = 0; j < paramArray.length; j++) {
 				if (paramArray[i][j] === player) {
@@ -82,7 +82,11 @@ class TicTacToeGameSession{
 			score2 = 0;
 		}
 
-		for (let i = 0, j = paramArray.length - 1; i < paramArray.length; i++, j--) {
+		for (
+			let i = 0, j = paramArray.length - 1;
+			i < paramArray.length;
+			i++, j--
+		) {
 			if (paramArray[i][i] === player) {
 				score++;
 			}
@@ -98,6 +102,4 @@ class TicTacToeGameSession{
 			console.log(row);
 		}
 	}
-
-	
 }

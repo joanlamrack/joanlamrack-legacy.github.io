@@ -29,7 +29,11 @@ function whoIsWinningTicTacToe(paramArray, player) {
 		score2 = 0;
 	}
 
-	for (let i = 0, j = paramArray.length - 1; i < paramArray.length; i++, j--) {
+	for (
+		let i = 0, j = paramArray.length - 1;
+		i < paramArray.length;
+		i++, j--
+	) {
 		if (paramArray[i][i] === player) {
 			score++;
 		}
@@ -74,9 +78,8 @@ function TicTacToeGameSession(
 		}
 	};
 	this.NextTurn = function() {
-		this.currentTurn = this.currentTurn === firstPlayer
-			? SecondPlayer
-			: firstPlayer;
+		this.currentTurn =
+			this.currentTurn === firstPlayer ? SecondPlayer : firstPlayer;
 	};
 	this.PrintBoard = function() {
 		for (let row of this.board) {
@@ -87,13 +90,13 @@ function TicTacToeGameSession(
 
 let newGame = new TicTacToeGameSession("X", "O", 3, " ");
 //newGame.PrintCurrentTurn();
-newGame.TakeTurn(1, 0);
-newGame.TakeTurn(1, 1);
-newGame.TakeTurn(1, 2);
-newGame.TakeTurn(2, 2);
-newGame.TakeTurn(0, 2);
-newGame.TakeTurn(0, 1);
-newGame.TakeTurn(2, 1);
-newGame.TakeTurn(2, 0);
-newGame.TakeTurn(0, 0);
-newGame.PrintBoard();
+// newGame.TakeTurn(1, 0);
+// newGame.TakeTurn(1, 1);
+// newGame.TakeTurn(1, 2);
+// newGame.TakeTurn(2, 2);
+// newGame.TakeTurn(0, 2);
+// newGame.TakeTurn(0, 1);
+// newGame.TakeTurn(2, 1);
+// newGame.TakeTurn(2, 0);
+// newGame.TakeTurn(0, 0);
+// newGame.PrintBoard();

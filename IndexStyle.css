@@ -1,26 +1,24 @@
 /*Erithiana Sisijoan Koesnadi*/
 /*Note: I kept some background in comment incase I need to know the divs path*/
 
-.Blog_item:hover>i.arrow.right{
-	transform: rotateY(-45deg) !important;
-	-webkit-transform: rotateY(-45deg) !important;
-	-moz-transform:rotateY(-45deg) !important;
-	transition: 0.3s !important;
+.links {
+	text-decoration: none;
+	color: rgba(0, 81, 255, 0.938);
 }
 
-.Blog_item:hover>a, .Blog_item:hover br{
+.Blog_item:hover > a,
+.Blog_item:hover br {
 	display: block;
-
 }
 
-.Blog_item a, .Blog_item br{
+.Blog_item a,
+.Blog_item br {
 	display: none;
 	text-decoration: none;
 	color: white;
-
 }
 
-.Blog_item{
+.Blog_item {
 	background-color: grey;
 	font-size: 14px;
 	font-family: monospace;
@@ -29,67 +27,80 @@
 	user-select: none;
 }
 
-.Blog-Entries{
+.Blog-Entries {
 	/*background-color: red;*/
 }
 
-.Blog-FlavorText #Jakarta_GoogleMap{
+.Blog-FlavorText #Jakarta_GoogleMap {
 	text-decoration: none;
 	color: #33adff;
 }
 
-.Blog-FlavorText #hacktiv8_site{
+.Blog-FlavorText #hacktiv8_site {
 	text-decoration: none;
 	color: #ed8200;
 }
 
-.Blog-FlavorText p{
+.Blog-FlavorText p {
 	/*background-color: white;*/
 	font-style: "Verdana";
 	font-size: 12px;
-
 }
 
-.Blog-FlavorText{
+.Blog-FlavorText {
 	/*background-color: green;*/
 	text-align: center;
 	margin: auto auto;
 }
 
-.Blog-Icon .image img{
+.Blog-Icon .image img {
 	/*background-color: teal;*/
 	width: 50%;
 	display: block;
 	margin: 17% auto;
-
 }
 
-.Blog-Icon{
+@media (max-width: 600px) {
+	.Blog-Icon .image img {
+		display: block;
+		margin: 0 auto;
+		width: 50%;
+	}
+}
+
+.Blog-Icon {
 	/*background-color: yellow;*/
 	opacity: 25%;
 }
 
-.left_nav{
+.left_nav {
 	/*background-color: white;*/
-	grid-column: : 1 2; 
+	grid-column: 1 2;
 	grid-row: 1 2;
 	display: grid;
 	grid-template-rows: 4fr 4fr 10fr;
 }
 
-.blog_feed{
-	background-color:  #e6e6e6;
+@media (max-width: 600px) {
+	.left_nav {
+		/*background-color: white;*/
+		display: block;
+	}
+}
+
+.blog_feed {
+	background-color: #e6e6e6;
 	grid-column: 3 5;
 	grid-row: 1 2;
 	overflow-y: scroll;
 	scroll-behavior: smooth;
 }
 
-.main{
+.main {
 	height: 100%;
 }
 
-.blog_section video{
+.blog_section video {
 	/*background-color: pink;*/
 	width: 60%;
 	margin-right: 20%;
@@ -97,34 +108,78 @@
 	margin-top: 10px;
 }
 
+@media (max-width: 600px) {
+	.blog_section video {
+		/*background-color: pink;*/
+		width: 100%;
+		margin: 0;
+	}
+}
 
-.blog_section .youtube_embed{
+li {
+	list-style: none;
+}
+
+li ul {
+	display: list-item;
+	width: 90%;
+	margin-left: 10%;
+}
+
+figure > figcaption {
+	font-size: 10px;
+}
+
+figure {
+	width: 80%;
+	margin: auto auto;
+	display: block;
+}
+
+@media (max-width: 600px) {
+	figure {
+		width: 100%;
+		margin: auto auto;
+		display: block;
+	}
+}
+
+#imageCaption {
+	text-align: center;
+	background-color: gainsboro;
+}
+
+.blog_section .youtube_embed {
 	/*background-color: teal;*/
 	height: 75%;
 	width: 100%;
 	display: block;
-
 }
 
+.blog_section .halfcenterimage img {
+	margin: auto auto;
+	display: block;
+	margin-top: 10px;
+	width: 100%;
+}
 
-.blog_section .centeredimage img{
-	width: 25%;
+.blog_section .centeredimage img {
+	width: 50%;
 	display: block;
 	margin: auto auto;
 }
 
-.blog_section p{
+.blog_section p {
 	text-indent: 2em;
 	font-size: 12px;
 	margin-top: 10px;
-
 }
 
-.blog_section h5{
+.blog_section h5 {
 	font-size: 16px;
 }
 
-.blog_section{
+.blog_section {
 	margin: 10px;
 	border: 1px solid #cccccc;
 	font-family: monospace;
@@ -135,7 +190,7 @@
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.grid{
+.grid {
 	display: grid;
 	grid-template-columns: 1fr 3fr;
 	grid-template-rows: 100%;
@@ -143,30 +198,35 @@
 	padding: 0px;
 }
 
-
-
-footer img{
+@media (max-width: 600px) {
+	.grid {
+		display: block;
+		padding: 0px;
+	}
 }
 
-footer{
+footer img {
+}
+
+footer {
 	position: absolute;
 	width: 32px;
 	bottom: 0;
-	right:10px;
-	/*background-color: pink*/;
+	right: 10px;
+	/*background-color: pink*/
 }
 
-body{
+body {
 	/*background-color: darkseagreen;*/
 	height: 100%;
 }
 
-html{
+html {
 	height: 100%;
 	width: 100%;
 }
 
-*{
+* {
 	margin: 0;
 	padding: 0;
 }
